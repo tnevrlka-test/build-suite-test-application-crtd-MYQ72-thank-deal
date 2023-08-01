@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-annotations-llgt
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/tnevrlka-test/build-e2e-cblq-tenant/build-suite-test-application-crtd/test-annotations-llgt@sha256:b6ee5e76fba2c3330ce462ca7de8628f7058120e2f8b817ff85137228411bb0d
+        name: my-nginx
+        resources: {}
+status: {}
